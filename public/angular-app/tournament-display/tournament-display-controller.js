@@ -1,4 +1,4 @@
-angular.module("soccerTornament").controller("TournamentController", TournamentController)
+angular.module("soccerTournament").controller("TournamentController", TournamentController)
 
 function TournamentController(TournamentsDataFactory, $routeParams){
     const vm = this;
