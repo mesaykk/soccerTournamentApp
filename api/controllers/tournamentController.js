@@ -7,9 +7,9 @@ module.exports.getAllTournaments = function(req, res){
     let offset = 0;
     let count = 4;
 
-    // if(req.query && req.query.offset){
-    //     offset = parseInt(req.query.offset);
-    // }
+    if(req.query && req.query.offset){
+        offset = parseInt(req.query.offset);
+    }
     if(req.query && req.query.count){
         count = parseInt(req.query.count);
     }

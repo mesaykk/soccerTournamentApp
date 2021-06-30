@@ -1,0 +1,8 @@
+<h1>
+    {{vm.title}}
+</h1>
+<ul>
+    <li ng-repeat = "tournament in vm.tournaments">
+        <a ng-href="#!/tournaments/{{tournament._id}}">{{tournament.title}}</a></li>
+
+</ul>

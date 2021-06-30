@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/mesaykk/soccerTournamentApp#readme",
   "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.15",
     "nodemon": "^2.0.7"
