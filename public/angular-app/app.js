@@ -5,7 +5,7 @@ function config($routeProvider){
         templateUrl:"angular-app/tournament-list/tournament-list.html",
         controller: "TournamentsController",
         controllerAs: "vm"
-    }).when("/tournamets/:id", {
+    }).when("/tournaments/:id", {
         templateUrl:"angular-app/tournament-display/tournament.html",
         controller: "TournamentController",
         controllerAs: "vm"

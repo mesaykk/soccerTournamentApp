@@ -6,3 +6,28 @@
         <a ng-href="#!/tournaments/{{tournament._id}}">{{tournament.title}}</a></li>
 
 </ul>
+
+<form name="vm.tournamentForm" ng-submit="vm.addTournament()">
+
+    Please fill in the fields below <br>
+    Title: <input type="text" name="title" required ng-model = vm.newTournamentTitle style="color:black"/> <br>
+    Host Country: <input type="text" name="hostCountry" required ng-model = vm.newTournamentHostCountry style="color:black"/><br>
+    Best Player: <input type="text" name="bestPlayer" required ng-model = vm.newTournamentBestPlayer style="color:black"/><br>
+    Top Scorer: <input type="text" name="topScorer" required ng-model = vm.newTournamentTopScorer style="color:black"/><br>
+    Champions: <input type="text" name="champions" required ng-model = vm.newTournamentChampions style="color:black"/><br>
+    Final Date: <input type="text" name="finalDate" required ng-model = vm.newTournamentFinalDate style="color:black"/><br>
+    Final Result: <input type="text" name="finalResult" required ng-model = vm.newTournamentFinalResult style="color:black"/><br>
+    Mumber of Teams: <input type="text" name="numTeams" 
+       required ng-model = vm.newTournamentNumTeams 
+       ng-pattern="/^[1-9][0-3]{0,1}$/"style="color:black"/>
+    <span ng-show="vm.tournamentForm.numTeams.$dirty && vm.tournamentForm.numTeams.$invalid">Number of team must be between 4 to 40 </span> <br>
+
+ <button type="submit" class="btn-success">Add Tournament</button>
+</form>
+
+<!-- <form name="vm.gameForm" ng-submit="vm.addGame()">
+
+    Please provide the title of the game you want to remove <br>
+    <input type="text" name="title" required ng-model = vm.findGameTitle style="color:black"/> <br>
+    <button type="submit" class= "btn-success">Remove Game</button>
+</form> -->

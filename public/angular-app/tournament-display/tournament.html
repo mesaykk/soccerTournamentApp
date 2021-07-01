@@ -1,9 +1,13 @@
 <h1>Information about the tournament: <p>{{vm.tournament.title}}</p> </h1>
 
 <p> 
-    Host Country: {{vm.tournament.hostContry}} <br/>
+    Host Country: {{vm.tournament.hostCountry}} <br/>
     Number of Teams: {{vm.tournament.numTeams}} <br>
     Champions: {{vm.tournament.champions}} <br>
     Finalist: {{vm.tournament.finalist}} <br>
     Final Result: {{vm.tournament.finalResult}} 
 </p>
+<form name="vm.tournamentForm" ng-submit="vm.removeTournament()">
+
+    <button type="submit" class= "btn-success">Remove Tournament</button>
+</form>
